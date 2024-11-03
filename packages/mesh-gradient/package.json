@@ -1,0 +1,53 @@
+{
+  "name": "@mikhailmogilnikov/mesh-gradient",
+  "version": "1.0.0",
+  "description": "Mesh gradient component for React",
+  "keywords": [
+    "gradient",
+    "mesh"
+  ],
+  "author": "Mikhail Mogilnikov <mikhail.mogilnikov02@gmail.com>",
+  "homepage": "https://github.com/mikhailmogilnikov/selected",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikhailmogilnikov/selected.git",
+    "directory": "packages/mesh-gradient"
+  },
+  "bugs": {
+    "url": "https://github.com/mikhailmogilnikov/selected/issues"
+  },
+  "scripts": {
+    "build": "tsup src --dts",
+    "build:fast": "tsup src",
+    "dev": "pnpm build:fast --watch",
+    "clean": "rimraf dist .turbo",
+    "typecheck": "tsc --noEmit",
+    "prepack": "clean-package",
+    "postpack": "clean-package restore"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "dependencies": {
+    "react-intersection-observer": "^9.13.1",
+    "@react-aria/utils": "^3.25.3"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "*",
+    "clean-package": "2.2.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "clean-package": "@repo/clean-package-config",
+  "prettier": "@repo/prettier-config"
+}

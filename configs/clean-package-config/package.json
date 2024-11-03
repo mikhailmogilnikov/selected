@@ -1,0 +1,9 @@
+{
+  "name": "@repo/clean-package-config",
+  "version": "1.0.0",
+  "private": true,
+  "exports": {
+    ".": "./clean-package-config.json"
+  },
+  "devDependencies": {}
+}
