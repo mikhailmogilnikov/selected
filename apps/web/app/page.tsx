@@ -1,26 +1,19 @@
 'use client';
 
-import { useState } from 'react';
-
-import { Trigger } from '../../../packages/trigger/src';
+import { FileTrigger } from '../../../packages/file-trigger/src';
 
 export default function Home() {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <div className='p-4'>
-      <Trigger
-        asChild
-        action={['hover', 'focus']}
-        keyCode='Enter'
-        onTrigger={() => setIsOpen(true)}
-        onTriggerEnd={() => setIsOpen(false)}
+      <FileTrigger
+        multiple
+        fileLimitBytes={100 * 1024 * 1024}
+        fileType='pdf'
+        onAttach={(filelist) => console.log('attach', filelist)}
+        onLimit={(file) => console.log('limit', file)}
       >
-        <div className='flex flex-col gap-2'>
-          <button>Click me</button>
-          {isOpen && <div>Dropdown</div>}
-        </div>
-      </Trigger>
+        <button>Attach files</button>
+      </FileTrigger>
     </div>
   );
 }

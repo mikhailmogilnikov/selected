@@ -114,16 +114,24 @@ You can nest trigger actions to create more complex interactions.
 
 ```tsx
 <Trigger
+  asChild
   action="hover"
   delay={200}
   onTrigger={(e) => console.log('Button hovered!')}
 >
   <Trigger
+    asChild
     action="click"
     onTrigger={(e) => console.log('Button clicked!')}
   >
     <Button>Click Me</Button>
+  </Trigger>
 </Trigger>
+```
+
+```html
+<!-- output in DOM (no additional wrappers) -->
+<button>Click Me</button>
 ```
 
 ## Types

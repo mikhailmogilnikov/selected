@@ -1,9 +1,11 @@
 {
-  "name": "@mikhailmogilnikov/trigger",
+  "name": "@mikhailmogilnikov/file-trigger",
   "version": "1.0.4",
-  "description": "Trigger component for React",
+  "description": "Upload file trigger component for React",
   "keywords": [
     "react",
+    "file",
+    "input",
     "trigger"
   ],
   "exports": {
@@ -23,7 +25,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mikhailmogilnikov/selected.git",
-    "directory": "packages/trigger"
+    "directory": "packages/file-trigger"
   },
   "bugs": {
     "url": "https://github.com/mikhailmogilnikov/selected/issues"
@@ -44,7 +46,6 @@
     "react-dom": ">=18"
   },
   "dependencies": {
-    "@radix-ui/react-slot": "^1.1.0",
     "@react-aria/interactions": "^3.22.4",
     "@react-aria/utils": "^3.25.3"
   },
