@@ -1,11 +1,10 @@
 {
-  "name": "@mikhailmogilnikov/mesh-gradient",
-  "version": "1.0.7",
-  "description": "Mesh gradient component for React",
+  "name": "@mikhailmogilnikov/trigger",
+  "version": "1.0.0",
+  "description": "Trigger component for React",
   "keywords": [
     "react",
-    "gradient",
-    "mesh"
+    "trigger"
   ],
   "exports": {
     ".": "./dist/index.js"
@@ -24,7 +23,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mikhailmogilnikov/selected.git",
-    "directory": "packages/mesh-gradient"
+    "directory": "packages/trigger"
   },
   "bugs": {
     "url": "https://github.com/mikhailmogilnikov/selected/issues"
@@ -43,8 +42,9 @@
     "react-dom": ">=18"
   },
   "dependencies": {
-    "@react-aria/utils": "^3.25.3",
-    "react-intersection-observer": "^9.13.1"
+    "@radix-ui/react-slot": "^1.1.0",
+    "@react-aria/interactions": "^3.22.4",
+    "@react-aria/utils": "^3.25.3"
   },
   "devDependencies": {
     "@repo/typescript-config": "*",

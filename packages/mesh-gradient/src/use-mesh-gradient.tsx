@@ -34,7 +34,6 @@ export const useMeshGradient = (props: UseMeshGradientProps) => {
     color = 'green',
     darken,
     pause = false,
-    className,
     opacity = 1,
     animationDuration = 150,
     ...restProps

@@ -1,11 +1,10 @@
 {
-  "name": "@mikhailmogilnikov/mesh-gradient",
-  "version": "1.0.7",
-  "description": "Mesh gradient component for React",
+  "name": "@mikhailmogilnikov/squircle",
+  "version": "1.0.1",
+  "description": "Squircle component for React",
   "keywords": [
     "react",
-    "gradient",
-    "mesh"
+    "squircle"
   ],
   "exports": {
     ".": "./dist/index.js"
@@ -24,7 +23,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mikhailmogilnikov/selected.git",
-    "directory": "packages/mesh-gradient"
+    "directory": "packages/squircle"
   },
   "bugs": {
     "url": "https://github.com/mikhailmogilnikov/selected/issues"
@@ -43,8 +42,8 @@
     "react-dom": ">=18"
   },
   "dependencies": {
-    "@react-aria/utils": "^3.25.3",
-    "react-intersection-observer": "^9.13.1"
+    "@radix-ui/react-slot": "^1.1.0",
+    "figma-squircle": "^1.1.0"
   },
   "devDependencies": {
     "@repo/typescript-config": "*",

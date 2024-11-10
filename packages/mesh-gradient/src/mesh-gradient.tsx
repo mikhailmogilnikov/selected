@@ -6,7 +6,7 @@ export interface MeshGradientProps extends UseMeshGradientProps {}
 type MeshGradientRef = HTMLCanvasElement;
 
 export const MeshGradient = forwardRef<MeshGradientRef, MeshGradientProps>((props, ref) => {
-  const { setRefs, colorVars, isFading, canvasId, animationDuration, opacity, ...restProps } = useMeshGradient({
+  const { setRefs, colorVars, isFading, isVisible, canvasId, animationDuration, opacity, style, ...restProps } = useMeshGradient({
     ref,
     ...props,
   });
@@ -17,6 +17,7 @@ export const MeshGradient = forwardRef<MeshGradientRef, MeshGradientProps>((prop
       id={canvasId}
       style={{
         ...colorVars,
+        ...style,
         opacity: isFading ? 0 : opacity,
         transition: `opacity ${animationDuration}ms linear`,
       }}
